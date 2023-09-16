@@ -1,0 +1,72 @@
+.custom-card {
+ margin-bottom: 20px;
+}
+
+.card-group {
+ display: flex;
+}
+
+.card {
+ flex: 1;
+ margin: 10px;
+}
+
+span {
+ font-size: 40px;
+ font-weight: bold;
+ font-family: "Poppins", sans-serif;
+}
+
+#back-to-top {
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ display: none;
+ z-index: 99;
+}
+
+.navbar-toggler-icon {
+ width: 1em !important;
+ height: 1em !important;
+}
+
+h1 {
+ font-size: 45px !important;
+}
+
+#demo {
+ color: #ffb400;
+ font-family: "Poppins", sans-serif;
+}
+
+
+.nav-link:hover {
+
+ color: #ffb400 !important;
+}
+
+.nav-link {
+ font-size: 18px !important;
+}
+
+.typed-cursor {
+ opacity: 1;
+}
+
+.typed-cursor.typed-cursor--blink {
+ animation: typedisBlink 0.7s infinite;
+ -webkit-animation: typedisBlink 0.7s infinite;
+ animation: typedisBlink 0.7s infinite;
+}
+
+@keyframes typedisBlink {
+ 50% {
+  opacity: 0.0;
+ }
+}
+
+@-webkit-keyframes typedisBlink {
+ 0% {
+  opacity: 1;
+ }
+}

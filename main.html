@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f485dc5b73.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <title>Ahmed Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand fs-4 fw-bold" href="#">
+          <img src="./media/logo.png" alt="" id="logo" width="150px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">My Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="text-white text-center d-flex justify-content-center"
+    >
+      <video
+        class="img-fluid"
+        src="./media/video (1080p).mp4"
+        id="Homevid"
+        autoplay
+        loop
+        muted
+      ></video>
+      <div
+        class="container col-md-8 position-absolute align-self-center"
+        id="texthero"
+      >
+        <h1>HI, MY NAME IS AHMED SAYED</h1>
+        <span>I'm a </span>
+        <span class="typed" id="demo"></span>
+        <span class="typed-cursor" id="cursor">|</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>
+              Enthusiastic Full Stack Web Developer trained at ITI, equipped to
+              apply skills and dedication to dynamic, innovative projects while
+              continuously learning and growing in this evolving field.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2>Skills</h2>
+            <ul>
+              <li>
+                Web Development
+                <ul>
+                  <li>Front-End</li>
+                  <li>Back-End</li>
+                </ul>
+              </li>
+              <li>Graphic Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Work Section -->
+    <section id="work" class="bg-light py-5">
+      <div class="container">
+        <h2>My Work</h2>
+        <div class="row">
+          <div class="col-md-8 custom-card">
+            <div class="card-group">
+              <!-- Project 1 -->
+              <div class="card shadow-lg">
+                <!-- Button trigger modal -->
+                <a
+                  class=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <img
+                    src="./media/Project1.png"
+                    class="card-img-top"
+                    alt="Work
+                  1"
+                  />
+                </a>
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          Simple E-commerce Site
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="./media/Project1.png"
+                          class="card-img-top"
+                          alt="Work 1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Simple E-commerce Site</h5>
+                  <p class="card-text">
+                    This project serves as a prototype for an e-commerce
+                    platform, demonstrating the core functionality of product
+                    browsing, selection, and interaction. It also showcases best
+                    practices for web design, including responsiveness and user
+                    input validation. This prototype can be a foundation for
+                    further development of a fully-fledged e-commerce website.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="card shadow-lg">
+                <img
+                  src="./media/Project2.png"
+                  class="card-img-top"
+                  alt="Work 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sample of HTML5 Skills</h5>
+                  <p class="card-text">Some HTML5 and Js and CSS3 Skills</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="bg-secondary text-white py-5">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="johndoe@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> frggtf66@gmail.com</p>
+            <p><strong>Phone:</strong> +02 01127185550</p>
+            <p><strong>Address:</strong> Giza , Egypt</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Back to Top Button -->
+    <button
+      id="back-to-top"
+      class="btn btn-primary rounded-circle"
+      title="Back to Top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p>&copy; 2023 Ahmed Sayed. All rights reserved 😄.</p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>
