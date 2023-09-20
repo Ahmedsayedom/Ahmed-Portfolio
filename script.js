@@ -29,8 +29,7 @@ function typeWriter() {
     document.getElementById("cursor").classList.remove("typed-cursor--blink")
   }
 }
-typeWriter()
-
+/****************BackToTopButton**********************/
 var backToTopButton = document.getElementById("back-to-top")
 
 backToTopButton.addEventListener("click", function () {
@@ -47,3 +46,40 @@ window.addEventListener("scroll", function () {
     backToTopButton.style.display = "none"
   }
 })
+/***********************Navbar****************************/
+function navBar() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("nav").classList.add("navbar-shrink")
+    var img = document.getElementById("logo")
+    img.src = "./media/logo.png"
+    var navlinks = document.querySelectorAll(".nav-link")
+    navlinks.forEach(link => {
+      link.classList.remove("nav-link-color")
+    })
+    img.style.width = "200px"
+  } else {
+    document.getElementById("nav").classList.remove("navbar-shrink")
+    var img = document.getElementById("logo")
+    img.src = "./media/logo3.png"
+    var navlinks = document.querySelectorAll(".nav-link")
+    navlinks.forEach(link => {
+      link.classList.add("nav-link-color")
+    })
+    img.style.width = "230px"
+  }
+
+  if (
+    document.body.scrollTop > 375 ||
+    document.documentElement.scrollTop > 375
+  ) {
+  }
+}
+
+window.addEventListener("scroll", navBar)
+window.addEventListener("load", () => {
+  var navlinks = document.querySelectorAll(".nav-link")
+  navlinks.forEach(link => {
+    link.classList.add("nav-link-color")
+  })
+})
+typeWriter()
