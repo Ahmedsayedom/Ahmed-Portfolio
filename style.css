@@ -131,3 +131,23 @@ h1 {
     opacity: 1;
   }
 }
+
+#home {
+  height: 500px;
+}
+
+#about {
+  height: 500px;
+}
+
+#about .btn {
+  background-color: #ffb400;
+}
+
+#services {
+  height: 600px;
+}
+
+#services .card-body {
+  height: 130px;
+}

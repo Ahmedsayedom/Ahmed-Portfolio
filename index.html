@@ -80,16 +80,24 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5 text-center">
-      <div class="container">
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <h2>About Me</h2>
         <div class="row">
-          <div class="col-md-6">
-            <h2>About Me</h2>
-            <p>
-              Enthusiastic Full Stack Web Developer trained at ITI, equipped to
-              apply skills and dedication to dynamic, innovative projects while
-              continuously learning and growing in this evolving field.
-            </p>
+          <div class="col-md-12 " data-aos="fade-up" data-aos-delay="300">
+            <div class="card mb-4 shadow">
+              <div class="card-body">
+                <p>I'm a developer based in giza, egypt</p>
+                <p class="card-text ">
+                  Enthusiastic Full Stack Web Developer trained at ITI, equipped to
+                  apply skills and dedication to dynamic, innovative projects while
+                  continuously learning and growing in this evolving field.
+                </p>
+              </div>
+            </div>
+            <div>
+              <a class="btn" href="./Ahmed_Sayed_Resume.pdf" download>Download CV</a>
+            </div>
           </div>
         </div>
       </div>
@@ -99,22 +107,24 @@
       <div class="container text-center">
         <h2>Services</h2>
         <div class="row">
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-6 " data-aos="fade-up" data-aos-delay="300">
             <!-- Service 1 -->
-            <div class="card mb-4">
-              <div class="card-body">
+            <div class="card mb-4 ">
+              <div class="card-body shadow">
+
                 <h5 class="card-title">Full Stack Developer</h5>
                 <p class="card-text">
                   I build web applications with both front-end and back-end
                   skills and technologies
                 </p>
               </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="350">
             <!-- Service 2 -->
             <div class="card mb-4">
-              <div class="card-body">
+              <div class="card-body shadow">
                 <h5 class="card-title">Back-End Developer</h5>
                 <p class="card-text">
                   I build robust and scalable server-side solutions using
@@ -123,10 +133,10 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
             <!-- Service 3 -->
             <div class="card mb-4">
-              <div class="card-body">
+              <div class="card-body shadow">
                 <h5 class="card-title">Front-End Developer</h5>
                 <p class="card-text">
                   I develop responsive wep pages using HML5, CSS3, Javascript
@@ -138,82 +148,90 @@
       </div>
     </section>
 
+    <!-- Work Section -->
     <section id="work" class="bg-light py-5 text-center">
       <div class="container">
         <h2>My Work</h2>
         <div class="row">
-          <div class="col-md-8 custom-card">
-            <div class="card-group">
-              <!-- Project 1 -->
-              <div class="card shadow-lg col-sm-12">
-                <!-- Button trigger modal -->
-                <a
-                  class=""
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  <img
-                    src="./media/Project1.png"
-                    class="card-img-top"
-                    alt="Work
-                  1"
-                  />
-                </a>
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
-                          Simple E-commerce Site
-                        </h1>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <img
-                          src="./media/Project1.png"
-                          class="card-img-top"
-                          alt="Work 1"
-                        />
-                      </div>
+          <!-- Project 1 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-lg" data-aos="fade-up" data-aos-delay="300>
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1"
+              >
+                <img
+                  src="./media/Project1.png"
+                  class="card-img-top"
+                  alt="Work 1"
+                />
+              </a>
+              <div
+                class="modal fade"
+                id="exampleModal1"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel1"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel1">
+                        Simple E-commerce Site
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="./media/Project1.png"
+                        class="card-img-top"
+                        alt="Work 1"
+                      />
                     </div>
                   </div>
                 </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Simple E-commerce Site</h5>
-                  <p class="card-text">
-                    This project serves as a prototype for an e-commerce
-                    platform, demonstrating the core functionality of product
-                    browsing, selection, and interaction. It also showcases best
-                    practices for web design, including responsiveness and user
-                    input validation. This prototype can be a foundation for
-                    further development of a fully-fledged e-commerce website.
-                  </p>
-                </div>
               </div>
+              <div class="card-body">
+                <h5 class="card-title">Simple E-commerce Site</h5>
+                <p class="card-text">
+                  This project serves as a prototype for an e-commerce platform,
+                  demonstrating the core functionality of product browsing,
+                  selection, and interaction. It also showcases best practices
+                  for web design, including responsiveness and user input
+                  validation. This prototype can be a foundation for further
+                  development of a fully-fledged e-commerce website.
+                </p>
+              </div>
+            </div>
+          </div>
 
-              <!-- Project 2 -->
-              <div class="card shadow-lg">
-                <img
-                  src="./media/Project2.png"
-                  class="card-img-top"
-                  alt="Work 2"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Sample of HTML5 Skills</h5>
-                  <p class="card-text">Some HTML5 and Js and CSS3 Skills</p>
-                </div>
+          <!-- Project 2 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-lg "data-aos="fade-up" data-aos-delay="350">
+              <img
+                src="./media/Project2.png"
+                class="card-img-top"
+                alt="Work 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sample of HTML5 Skills</h5>
+                <p class="card-text">Some HTML5 and JS and CSS3 Skills</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-lg "data-aos="fade-up" data-aos-delay="400">
+              <div class="card-body">
+                <h5 class="card-title">Windows Form App</h5>
+                <p class="card-text">Blog app based on code first data base with many forms in the app to add and edit and delete post or catalog or register users and login </p>
               </div>
             </div>
           </div>
@@ -226,7 +244,7 @@
       <div class="container">
         <h2>Contact Me</h2>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-right">
             <form>
               <div class="mb-3">
                 <label for="name" class="form-label">Your Name</label>
@@ -234,7 +252,7 @@
                   type="text"
                   class="form-control"
                   id="name"
-                  placeholder="John Doe"
+                  placeholder="Your name"
                 />
               </div>
               <div class="mb-3">
@@ -243,7 +261,7 @@
                   type="email"
                   class="form-control"
                   id="email"
-                  placeholder="johndoe@example.com"
+                  placeholder="Your email"
                 />
               </div>
               <div class="mb-3">
@@ -260,7 +278,7 @@
               </button>
             </form>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 mt-3" data-aos="fade-right" data-aos-delay="300">
             <h3>Contact Information</h3>
             <p><strong>Email:</strong> frggtf66@gmail.com</p>
             <p><strong>Phone:</strong> +02 01127185550</p>
