@@ -21,7 +21,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#home">
             <img src="./media/logo3.png" alt="" id="logo" class="img-fluid" />
           </a>
           <button
@@ -41,10 +41,13 @@
                 <a class="nav-link active" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about" data-offset="80">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#work">My Work</a>
+                <a class="nav-link" href="#services" data-offset="80">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work"data-offset="80">My Work</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -84,7 +87,7 @@
       <div class="container text-center">
         <h2>About Me</h2>
         <div class="row">
-          <div class="col-md-12 " data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-12 " data-aos="fade-up" data-aos-delay="400">
             <div class="card mb-4 shadow">
               <div class="card-body">
                 <p>I'm a developer based in giza, egypt</p>
@@ -96,7 +99,7 @@
               </div>
             </div>
             <div>
-              <a class="btn" href="./Ahmed_Sayed_Resume.pdf" download>Download CV</a>
+              <a class="btn " href="./Ahmed_Sayed_Resume.pdf" download="Ahmed_Sayed_Resume.pdf" data-aos="fade-up">Download CV</a>
             </div>
           </div>
         </div>
@@ -104,9 +107,9 @@
     </section>
     <!-- Services Section -->
     <section id="services" class="py-5">
-      <div class="container text-center">
+      <div class="container text-center ">
         <h2>Services</h2>
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-6 " data-aos="fade-up" data-aos-delay="300">
             <!-- Service 1 -->
             <div class="card mb-4 ">
@@ -120,15 +123,14 @@
               </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="350">
-            <!-- Service 2 -->
-            <div class="card mb-4">
-              <div class="card-body shadow">
-                <h5 class="card-title">Back-End Developer</h5>
-                <p class="card-text">
-                  I build robust and scalable server-side solutions using
-                  ASP.NET Core and other .NET technologies.
+            <div class="col-md-6 " data-aos="fade-up" data-aos-delay="400">
+              <!-- Service 2 -->
+              <div class="card mb-4">
+                <div class="card-body shadow">
+                  <h5 class="card-title">Back-End Developer</h5>
+                  <p class="card-text">
+                    I build robust and scalable server-side solutions using
+                    ASP.NET Core and other .NET technologies.
                 </p>
               </div>
             </div>
@@ -147,7 +149,7 @@
         </div>
       </div>
     </section>
-
+    
     <!-- Work Section -->
     <section id="work" class="bg-light py-5 text-center">
       <div class="container">
