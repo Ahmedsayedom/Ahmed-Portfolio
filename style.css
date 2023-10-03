@@ -17,6 +17,11 @@
 
 }
 
+#Homevid {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width:645px) {
   #nav {
     padding-top: 1rem;
@@ -39,7 +44,14 @@
     max-width: 150vh;
 
   }
+
+  #Homevid {
+    max-width: 190%;
+    height: auto;
+  }
+
 }
+
 
 #nav.navbar-shrink {
   padding-top: 1rem;
@@ -149,4 +161,15 @@ h1 {
 
 #services .card-body {
   height: 130px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
 }
